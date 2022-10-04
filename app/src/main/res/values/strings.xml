@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">futbolya</string>
-    <string name="txt_boton">registrate ahora</string>
+    <string name="bt_ingresoregistro">registrate ahora</string>
+    <string name="bt_regresar">Regresar</string>
+    <string name="tv2">Ingrese Datos</string>
+    <string name="bt_registro">Registrar</string>
+    <string name="tv3">Nombre y Apellido</string>
+    <string name="tv4">Numero De Telefono</string>
+    <string name="tv5">Correo Electronico</string>
+    <string name="tv6">Crear Contraseña</string>
 </resources>
