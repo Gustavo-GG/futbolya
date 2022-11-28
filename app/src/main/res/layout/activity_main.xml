@@ -7,46 +7,12 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView5"
-        android:layout_width="145dp"
-        android:layout_height="36dp"
-        android:fontFamily="sans-serif"
-        android:text="Ingresar Correo"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.127" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="307dp"
-        android:layout_height="72dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.267">
-
-        <EditText
-            android:id="@+id/editTextTextEmailAddress"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:ems="10"
-            android:inputType="textEmailAddress" />
-
-    </LinearLayout>
-
-    <TextView
         android:id="@+id/textView4"
         android:layout_width="411dp"
         android:layout_height="59dp"
-        android:background="#8BC34A"
+        android:background="#84CA20"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="#8BC34A"
+        android:textColor="#84CA20"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -55,13 +21,29 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/txt_1"
+        android:layout_width="145dp"
+        android:layout_height="36dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/txt_1"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#201D1D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.127" />
+
+    <TextView
+        android:id="@+id/txt_2"
         android:layout_width="139dp"
         android:layout_height="38dp"
         android:fontFamily="sans-serif"
-        android:text="Ingresar Contraseña"
+        android:text="@string/txt_2"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#201D1D"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -72,7 +54,7 @@
         android:id="@+id/textView"
         android:layout_width="413dp"
         android:layout_height="50dp"
-        android:background="#8BC34A"
+        android:background="#84CA20"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -97,7 +79,7 @@
         android:layout_height="56dp"
         android:text="The Match"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="#272D2E"
+        android:textColor="#201D1D"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.082"
@@ -112,22 +94,61 @@
         android:text="¿Aun no te registras? "
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btingresar"
-        app:layout_constraintVertical_bias="0.216" />
+        app:layout_constraintVertical_bias="0.138" />
 
     <Button
         android:id="@+id/btingresar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ingresar"
-        app:backgroundTint="#8BC34A"
+        android:textColor="#201D1D"
+        app:backgroundTint="#84CA20"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.074" />
+        app:layout_constraintVertical_bias="0.113" />
+
+    <Button
+        android:id="@+id/btregistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="registro"
+        android:text="@string/bt_ingresoregistro"
+        android:textColor="#201D1D"
+        app:backgroundTint="#FF018786"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.106"
+        tools:ignore="TextContrastCheck" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="307dp"
+        android:layout_height="72dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.267">
+
+        <EditText
+            android:id="@+id/txtCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:inputType="text"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -138,63 +159,54 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.522"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/txt_2"
         app:layout_constraintVertical_bias="0.0">
 
         <EditText
-            android:id="@+id/editTextTextPassword3"
+            android:id="@+id/txtContra"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPassword" />
+            android:inputType="text|textPassword"
+            android:minHeight="48dp"
+            tools:ignore="SpeakableTextPresentCheck" />
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btregistro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="registro"
-        android:text="@string/bt_ingresoregistro"
-        app:backgroundTint="#FF9800"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.057" />
-
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="319dp"
-        android:layout_height="93dp"
+        android:layout_width="232dp"
+        android:layout_height="70dp"
         app:layout_constraintBottom_toBottomOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.904">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.903">
 
         <ImageButton
-            android:id="@+id/imageButton2"
-            android:layout_width="51dp"
-            android:layout_height="50dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.738"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.511"
-            app:srcCompat="@drawable/facebook_log_vector" />
-
-        <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="52dp"
+            android:id="@+id/bt_instagram"
+            android:layout_width="53dp"
             android:layout_height="49dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.329"
+            app:layout_constraintHorizontal_bias="0.223"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@mipmap/instagrame" />
+            app:layout_constraintVertical_bias="0.523"
+            app:srcCompat="@drawable/newinsta" />
+
+        <ImageButton
+            android:id="@+id/bt_facebook"
+            android:layout_width="52dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.755"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.55"
+            app:srcCompat="@drawable/_33547" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

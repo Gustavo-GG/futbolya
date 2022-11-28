@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">futbolya</string>
+    <string name="txt_1">Ingrese Correo</string>
+    <string name="txt_2">Ingrese Contraseña</string>
     <string name="bt_ingresoregistro">registrate ahora</string>
     <string name="bt_regresar">Regresar</string>
     <string name="tv2">Ingrese Datos</string>
@@ -8,4 +10,13 @@
     <string name="tv4">Numero De Telefono</string>
     <string name="tv5">Correo Electronico</string>
     <string name="tv6">Crear Contraseña</string>
+    <string name="txt_nombres">Nombre y Apellido</string>
+    <string name="txt_numero">Numero</string>
+    <string name="txt_correo">Correo</string>
+    <string name="txt_contraseña">contraseña</string>
+    <string name="txt13">Visualizar Mapa</string>
+    <string name="txt17">Visualizar Mapa</string>
+    <string name="txt18">Listar Usuarios</string>
+    <string name="title_activity_maps">MapsActivity</string>
+
 </resources>
